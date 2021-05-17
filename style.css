@@ -108,11 +108,6 @@ body{
     margin:auto;
 }
 
-#text{
-    display: flex;
-    flex-direction: column;
-}
-
 .videoBox{
     display :flex;
     margin: 2vh;
@@ -135,8 +130,6 @@ body{
     text-align: center;
     width: 50%;
 }
-
-
 
 #box1{
     justify-content: center;
