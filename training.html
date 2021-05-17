@@ -19,6 +19,35 @@
         </div>
         <div id="content">
             <h1 class="titleHeader">Pourquoi ce site ?</h1>
+            <div class="formContainer">
+                <form class="theme" action ="/my-handling-form-page">
+                    <div class="data">
+                        <input class = "zone_de_texte" type="text" placeholder="Pseudo" id="pseudo" name="userPseudo" required>
+                        <input class = "zonde_de_nombre" type="number" placeholder="Taille" id="size" name="userSize" min="100" max="250" required>
+                        <input class = "zone_de_nombre" type="number" placeholder="Poids" id="weight" name="userWeight" min="40" required>
+                        <select class="genre" name="Genre" id="userGender">
+                            <option value="">--Sélectionnez votre Genre--</option>
+                            <option value="femme">Femme</option>
+                            <option value="homme">Homme</option>
+                            <option value="t-rex">T-Rex</option>
+                        </select>
+                    </div>
+                    <div class="bouton">
+                        <button id="createTraining" type="button" >Entraînement personnalisé</button>
+                    </div>
+                </form>
+                <div id="measurementsResults">
+                    Resulats
+                </div>
+               <div>
+                <select class="genre" name="Genre" id="userGender">
+                    <option value="">--Sélectionnez le premier exercice--</option>
+                    <option value="femme">Femme</option>
+                    <option value="homme">Homme</option>
+                    <option value="t-rex">T-Rex</option>
+                </select>
+               </div> 
+            </div>
         </div>
         <div id="footer">
             <div class="footerLink" id="a-proposLink" ><a class="link" href="">A propos</a></div>
