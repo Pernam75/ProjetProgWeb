@@ -129,3 +129,8 @@ body{
     width: 52vw;
     height: 50vh;
 }
+
+#box1,#box2,#box3,#box4,#box5{
+    height: 100vh;
+    display: flex;
+}
