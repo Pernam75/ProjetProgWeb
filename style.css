@@ -25,7 +25,7 @@ body{
     background-color: #3C6E71;   
 }
 
-.title{
+.introTitle,.title{
     margin: 1%;
     color: #3C6E71;   
 }
@@ -89,18 +89,13 @@ body{
     transform: scaleX(1);
   }
 
-.introduction{
-    font-size: medium;
-    text-align: center;
-    color: #353535;
-    margin: 1%;
-}
 
-.paragraphe{
+.introduction,.paragraphe{
     text-align: justify;
     color: #353535;
     margin: 1%;
     font-size: medium;
+    width: 50%;
 }
 
 .headerLink{
@@ -131,6 +126,24 @@ body{
 }
 
 #box1,#box2,#box3,#box4,#box5{
-    height: 100vh;
+    height: 88vh;
     display: flex;
+    flex-direction: column;
+}
+
+.introTitle{
+    text-align: center;
+    width: 50%;
+}
+
+
+
+#box1{
+    justify-content: center;
+    align-items: center;
+}
+
+#box3,#box5{
+    align-items: flex-end;
+    align-items: right;
 }
