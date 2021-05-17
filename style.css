@@ -148,3 +148,18 @@ body{
     width: 52vw;
     height: 50vh;
 }
+
+/*Table style in training page*/
+table{
+    display: table;
+    border-collapse: collapse;
+    margin: 10px;
+    width: 100%;
+    display :none;
+}
+
+tr,th{
+    border-bottom: 1px solid #333;
+    text-align: center;
+    padding : 5px;
+}

@@ -1,1 +1,1 @@
-console.log("Salut");
+const resultsTable = document.querySelector("#resultsTable");
