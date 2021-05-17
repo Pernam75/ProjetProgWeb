@@ -102,6 +102,13 @@ body{
     margin: 1%;
     font-size: medium;
 }
+.paragraphe2{
+    text-align: justify;
+    color: #353535;
+    margin: 1%;
+    font-size: medium;
+    width : 200px;
+}
 
 .headerLink{
     width: 100%;
