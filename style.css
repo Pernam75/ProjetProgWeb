@@ -1,3 +1,4 @@
+/* Website basics style*/
 *,
 ::before,
 ::after {
@@ -17,17 +18,6 @@ body{
     min-height:100vh;
 	display:flex;
 	flex-direction:column;
-}
-
-.titleHeader{
-    color: white;
-    text-align: center;
-    background-color: #3C6E71;   
-}
-
-.title{
-    margin: 1%;
-    color: #3C6E71;   
 }
 
 #content{
@@ -55,6 +45,48 @@ body{
     display:flex;
 }
 
+.title{
+    margin: 1%;
+    color: #3C6E71;   
+}
+
+.titleHeader{
+    color: white;
+    text-align: center;
+    background-color: #3C6E71;   
+}
+
+.paragraphe{
+    text-align: justify;
+    color: #353535;
+    margin: 1%;
+    font-size: medium;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header and footer style*/
+
+.link{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.headerLink{
+    width: 100%;
+    text-align: center;
+}
+
+.footerLink{
+    width: 100%;
+    margin:auto;
+}
+
 .efrei_logo{
     width: 100px;
     height: 100px;
@@ -68,11 +100,7 @@ body{
     text-align:center;
 }
 
-.link{
-    color: white;
-    text-decoration: none;
-    position: relative;
-}
+/*Header and footer links animations*/
 
 .link::before {
     content: "";
@@ -91,14 +119,14 @@ body{
     transform: scaleX(1);
 }
 
+/*Home Page Style*/
+
 #introductionText{
     position:absolute;
     align-self: center;
     height: 30vh;
     width: 40vh;
-    
 }
-
 
 .introduction{
     font-size: medium;
@@ -107,27 +135,7 @@ body{
     margin: 1%;
 }
 
-.paragraphe{
-    text-align: justify;
-    color: #353535;
-    margin: 1%;
-    font-size: medium;
-}
-
-.headerLink{
-    width: 100%;
-    text-align: center;
-}
-
-.footerLink{
-    width: 100%;
-    margin:auto;
-}
-
-#text{
-    display: flex;
-    flex-direction: column;
-}
+/*Videos Styles*/
 
 .videoBox{
     display :flex;
