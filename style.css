@@ -98,6 +98,10 @@ body{
     width: 50%;
 }
 
+.introduction{
+    color: white;
+}
+
 .headerLink{
     width: 100%;
     text-align: center;
@@ -124,6 +128,7 @@ body{
     height: 88vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .introTitle{
@@ -138,6 +143,8 @@ body{
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 1s;
+    background-image: url(assets/test.jpg);
+    background-size: contain;
 }
 
 #box3,#box5{
