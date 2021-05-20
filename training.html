@@ -18,17 +18,17 @@
             <a class="headerLink" href="https://www.efrei.fr/" target="_blank"><img class = "efrei_logo" src = "assets/logo_efrei.png" alt="efrei_logo"></a>
         </div>
         <div id="content">
-            <h1 class="titleHeader">Pourquoi ce site ?</h1>
+            <h1 class="titleHeader">Créez un entraînement adapté à vos besoins</h1>
             <div class="formInformations">
                 <form class="informations" action ="/my-handling-form-page">
                     <div class="data">
                         <input class = "zone_de_texte" type="text" placeholder="Pseudo" id="pseudo" name="userPseudo" required>
                         <input class = "zonde_de_nombre" type="number" placeholder="Taille" id="size" name="userSize" min="100" max="250" required>
                         <input class = "zone_de_nombre" type="number" placeholder="Poids" id="weight" name="userWeight" min="40" required>
+                        <input class = "zone_de_nombre" type="number" placeholder="Age" id="age" name="userAge" min="18" required>
                         <div>
                             <p> Genre : </p>
-                            <input type="radio" id="homme" name="sexe" value="homme"
-                                    checked>
+                            <input type="radio" id="homme" name="sexe" value="homme">
                             <label for="homme">Masculin</label>
                         </div>
                         <div>
@@ -45,9 +45,6 @@
                             <option value="muscle">Masse Musculaire</option>
                             <option value="force">Force</option>
                         </select>
-                    </div>
-                    <div class="bouton">
-                        <button id="createTraining" type="button" >Entraînement personnalisé</button>
                     </div>
                 </form>
                 <div id="measurementsResults">
@@ -135,6 +132,10 @@
                     <option value="humanFlag">Human Flag</option>
                 </select>
             </div>
+            
+            <div class="bouton">
+                <button id="createTraining" type="button" >Calculer mon entraînement</button>
+            </div>
 
             <table id="trainingResults">
                 <caption>Votre entraînement personnalisé !</caption>
@@ -142,7 +143,7 @@
                     <tr>
                         <td>Exercice</td>
                         <td>Répétitions</td>
-                        <td>Tuto</td>
+                        <td>Tutoriel</td>
                     </tr>
                 </tbody>
             </table>
