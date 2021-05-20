@@ -46,8 +46,6 @@ body{
     position: relative;
     background-color: #353535;
     height : 7vh;
-    position: sticky;
-    top:0;
     color: white;
     padding: 2%;
     display:flex;
@@ -95,11 +93,11 @@ body{
     color: #353535;
     margin: 1%;
     font-size: medium;
-    width: 50%;
 }
 
 .introduction{
     color: white;
+    width: 50%;
 }
 
 .headerLink{
@@ -127,8 +125,6 @@ body{
 #box1,#box2,#box3,#box4,#box5{
     height: 88vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .introTitle{
@@ -145,11 +141,12 @@ body{
     animation-duration: 1s;
     background-image: url(assets/test.jpg);
     background-size: contain;
+    flex-direction: column;
+
 }
 
 #box3,#box5{
-    align-items: flex-end;
-    align-items: right;
+    justify-content: flex-end;
 }
 
 .reveal{
@@ -170,4 +167,16 @@ body{
 	100% {
 		opacity: 1;
 	}
+}
+
+.textBox{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    background-color: rgb(224, 224, 224);
+}
+
+#box2,#box3,#box4,#box5{
+    flex-direction: row;
 }
