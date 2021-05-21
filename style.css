@@ -175,6 +175,7 @@ body{
     width: 50%;
     justify-content: center;
     background-color: rgb(224, 224, 224);
+    padding: 2%;
 }
 
 #box2,#box3,#box4,#box5{
