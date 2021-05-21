@@ -16,9 +16,13 @@ add.onmouseup = function addTraining(){
     const currentExercice5 = document.getElementById("exercice5").value;
     const exercicesArray = [currentExercice1, currentExercice2, currentExercice3, currentExercice4, currentExercice5];
     //Now we create the table new row
-    exercicesArray.forEach(element => {
-        addNewRow(element, getRepetition(element, imc, userGender, userAge, userGoal));
-    });
+    if(currentExercice1 == "" || currentExercice2 == "" || currentExercice3 == "" || currentExercice4 == "" || currentExercice5 == ""){
+        alert("Veuillez entrer un exercice")
+    }else{
+        exercicesArray.forEach(element => {
+            addNewRow(element, getRepetition(element, imc, userGender, userAge, userGoal));
+        });
+    }
 }
 function addNewRow(exercice, repetition){
      const newRow = document.createElement("tr");
@@ -55,9 +59,9 @@ function getGender(){
 
 
 function getRepetition(exercice, imc, gender, age, objectif){
-    let imcClass = 0; // We calculate the imc classification
+    let imcClass = 1; // We calculate the imc classification
     if(imc <= 18,5){
-        imcClass = 5;
+        imcClass = 7;
     }else if(imc > 18,5 && imc <= 25){
         imcCLass = 10;
     }else if(imc > 25 && imc <= 30){
@@ -70,14 +74,14 @@ function getRepetition(exercice, imc, gender, age, objectif){
         imcClass = 1;
     }
 
-    let genderClass = 0;
+    let genderClass = 1;
     if(gender == "homme"){
         genderClass = 1,45; // Men are on average 30 to 60% stronger than women
     }else{
         genderClass = 1;
     }
 
-    let ageClass = 0; // performance depends on age
+    let ageClass = 1; // performance depends on age
     if(age < 30){
         ageClass = 10;
     }else if(age > 30 && age <= 45){
@@ -88,34 +92,52 @@ function getRepetition(exercice, imc, gender, age, objectif){
         ageClass = 3;
     }
 
+    let objectifClass = 1;
+    if(objectif == "endurance"){
+        objectifClass = 15;
+    }else if(objectif == "muscle"){
+        objectifClass = 10;
+    }else{
+        objectifClass = 5;
+    }
+
+    let nbRepetitions = imcClass*genderClass*ageClass*objectifClass;
+
     switch (exercice) {
-        case "Push-up":
+        case "push-up":
+            nbRepetitions = nbRepetitions*10;
             break;
         case "knees-push-up":
+            nbRepetitions = nbRepetitions*15;
             break;
         case "handstand-push-up":
+            nbRepetitions = nbRepetitions*3;
             break;
         case "pull-up":
+            nbRepetitions = nbRepetitions*5;
             break;
         case "bench-dips":
+            nbRepetitions = nbRepetitions*10;
             break;
         case "dips":
+            nbRepetitions = nbRepetitions*7;
             break;
         case "squats":
+            nbRepetitions = nbRepetitions*10;
             break;
         case "split":
+            nbRepetitions = nbRepetitions*15;
             break;
         case "muscle-up":
-            break;
-        case "front-lever":
-            break;
-        case "back-lever":
+            nbRepetitions = nbRepetitions*4;
             break;
         case "humanFlag":
+            nbRepetitions = nbRepetitions*1;
             break;
         default:
+            nbRepetitions = 2;
             break;
     }
 
-    return 3;
+    return nbRepetitions/350;
 }

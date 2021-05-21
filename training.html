@@ -26,30 +26,25 @@
                         <input class = "zonde_de_nombre" type="number" placeholder="Taille" id="size" name="userSize" min="100" max="250" required>
                         <input class = "zone_de_nombre" type="number" placeholder="Poids" id="weight" name="userWeight" min="40" required>
                         <input class = "zone_de_nombre" type="number" placeholder="Age" id="age" name="userAge" min="18" required>
-                        <div>
-                            <p> Genre : </p>
-                            <input type="radio" id="homme" name="sexe" value="homme">
-                            <label for="homme">Masculin</label>
+                        <div class="genderGoal">
+                            <div>
+                                <p> Genre : </p>
+                                <input type="radio" id="homme" name="sexe" value="homme" checked>
+                                <label for="homme">Masculin</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="femme" name="sexe" value="femme">
+                                <label for="femme">Féminin</label>
+                            </div>
+                            <select class="goal" name="Goal" id="userGoal">
+                                <option value="">--Sélectionnez votre Objectif</option>
+                                <option value="endurance">Endurance Musculaire</option>
+                                <option value="muscle">Masse Musculaire</option>
+                                <option value="force">Force</option>
+                            </select>
                         </div>
-                        <div>
-                            <input type="radio" id="femme" name="sexe" value="femme">
-                            <label for="femme">Féminin</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="t-rex" name="sexe" value="t-rex">
-                            <label for="femme">T-Rex</label>
-                        </div>
-                        <select class="goal" name="Goal" id="userGoal">
-                            <option value="">--Sélectionnez votre Objectif</option>
-                            <option value="endurance">Endurance Musculaire</option>
-                            <option value="muscle">Masse Musculaire</option>
-                            <option value="force">Force</option>
-                        </select>
                     </div>
                 </form>
-                <div id="measurementsResults">
-                    Resultats
-                </div>
             </div> 
             <div class="formExercices">
                 <select class="exercices" name="Exercice" id="exercice1">
@@ -63,8 +58,6 @@
                     <option value="squats">Squats</option>
                     <option value="split">Split</option>
                     <option value="muscle-up">Muscle-up</option>
-                    <option value="front-lever">Front-Lever</option>
-                    <option value="back-lever">Back-Lever</option>
                     <option value="humanFlag">Human Flag</option>
                 </select>
 
@@ -79,8 +72,6 @@
                     <option value="squats">Squats</option>
                     <option value="split">Split</option>
                     <option value="muscle-up">Muscle-up</option>
-                    <option value="front-lever">Front-Lever</option>
-                    <option value="back-lever">Back-Lever</option>
                     <option value="humanFlag">Human Flag</option>
                 </select>
 
@@ -95,8 +86,6 @@
                     <option value="squats">Squats</option>
                     <option value="split">Split</option>
                     <option value="muscle-up">Muscle-up</option>
-                    <option value="front-lever">Front-Lever</option>
-                    <option value="back-lever">Back-Lever</option>
                     <option value="humanFlag">Human Flag</option>
                 </select>
 
@@ -111,8 +100,6 @@
                     <option value="squats">Squats</option>
                     <option value="split">Split</option>
                     <option value="muscle-up">Muscle-up</option>
-                    <option value="front-lever">Front-Lever</option>
-                    <option value="back-lever">Back-Lever</option>
                     <option value="humanFlag">Human Flag</option>
                 </select>
 
@@ -127,8 +114,6 @@
                     <option value="squats">Squats</option>
                     <option value="split">Split</option>
                     <option value="muscle-up">Muscle-up</option>
-                    <option value="front-lever">Front-Lever</option>
-                    <option value="back-lever">Back-Lever</option>
                     <option value="humanFlag">Human Flag</option>
                 </select>
             </div>

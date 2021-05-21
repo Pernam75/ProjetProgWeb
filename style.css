@@ -162,3 +162,15 @@ tr,th{
     text-align: center;
     padding : 5px;
 }
+
+.formInformations{
+    margin: 1%;
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+
+.genderGoal{
+    display: flex;
+    flex-direction:column;
+}
