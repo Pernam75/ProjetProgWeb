@@ -133,6 +133,7 @@ body{
 }
 
 #box1{
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     animation-name: fadeInOpacity;
@@ -140,9 +141,8 @@ body{
     animation-timing-function: ease-in;
     animation-duration: 1s;
     background-image: url(assets/test.jpg);
-    background-size: contain;
-    flex-direction: column;
-
+    background-position: center center;
+    background-repeat: no-repeat;    
 }
 
 #box3,#box5{
@@ -172,12 +172,30 @@ body{
 .textBox{
     display: flex;
     flex-direction: column;
-    width: 50%;
     justify-content: center;
     background-color: rgb(224, 224, 224);
     padding: 2%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex:1;
 }
 
 #box2,#box3,#box4,#box5{
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.welcomeImage{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex:1;
+    min-width: 500px;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
 }
