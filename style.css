@@ -100,6 +100,16 @@ body{
     width: 50%;
 }
 
+.paragraphe{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.title{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 .headerLink{
     width: 100%;
     text-align: center;
@@ -174,7 +184,6 @@ body{
     flex-direction: column;
     justify-content: center;
     background-color: rgb(224, 224, 224);
-    padding: 2%;
     flex-grow: 1;
     flex-shrink: 1;
     flex:1;
