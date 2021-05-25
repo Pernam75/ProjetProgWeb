@@ -2,44 +2,87 @@ const resultsTable = document.querySelector("#resultsTable");
 const add = document.querySelector("#createTraining");
 
 add.onmouseup = function addTraining(){
-    //First we calculate the imc of the user
-    const imc = IMCcalculator(document.getElementById("size").value, document.getElementById("weight").value);
-    //Then we get the gender the age and the target of the user in order to calculate the better training program
-    const userGender = getGender();
-    const userAge = document.getElementById("age").value;
-    const userGoal = document.getElementById("userGoal").value;
-    //Now we get the selected exercices
-    const currentExercice1 = document.getElementById("exercice1").value;
-    const currentExercice2 = document.getElementById("exercice2").value;
-    const currentExercice3 = document.getElementById("exercice3").value;
-    const currentExercice4 = document.getElementById("exercice4").value;
-    const currentExercice5 = document.getElementById("exercice5").value;
-    const exercicesArray = [currentExercice1, currentExercice2, currentExercice3, currentExercice4, currentExercice5];
-    //Now we create the table new row
-    if(currentExercice1 == "" || currentExercice2 == "" || currentExercice3 == "" || currentExercice4 == "" || currentExercice5 == ""){
-        alert("Veuillez entrer un exercice")
+    if(document.getElementById("age").value == "" || document.getElementById("size").value == "" || document.getElementById("weight").value == "" || document.getElementById("userGoal").value == ""){
+        alert("Veuillez entrer toutes vos informations")
     }else{
-        exercicesArray.forEach(element => {
-            addNewRow(element, getRepetition(element, imc, userGender, userAge, userGoal));
-        });
+        //First we calculate the imc of the user
+        const imc = IMCcalculator(document.getElementById("size").value, document.getElementById("weight").value);
+        //Then we get the gender the age and the target of the user in order to calculate the better training program
+        const userGender = getGender();
+        const userAge = document.getElementById("age").value;
+        const userGoal = document.getElementById("userGoal").value;
+        //Now we get the selected exercices
+        const currentExercice1 = document.getElementById("exercice1").value;
+        const currentExercice2 = document.getElementById("exercice2").value;
+        const currentExercice3 = document.getElementById("exercice3").value;
+        const currentExercice4 = document.getElementById("exercice4").value;
+        const currentExercice5 = document.getElementById("exercice5").value;
+        const exercicesArray = [currentExercice1, currentExercice2, currentExercice3, currentExercice4, currentExercice5];
+        //Now we create the table new row
+        if(currentExercice1 == "" && currentExercice2 == "" && currentExercice3 == "" && currentExercice4 == "" && currentExercice5 == ""){
+            alert("Veuillez entrer au moins un exercice")
+        }else{
+            exercicesArray.forEach(element => {
+                if(element != ""){
+                    addNewRow(element, getRepetition(element, imc, userGender, userAge, userGoal));
+                }
+            });
+        }
     }
 }
+
+
+
 function addNewRow(exercice, repetition){
-     const newRow = document.createElement("tr");
+    const newRow = document.createElement("tr");
 
-     const cell1 = document.createElement("td");
-     const cell2 = document.createElement("td");
-     const cell3 = document.createElement("td");
+    const cell1 = document.createElement("td");
+    const cell2 = document.createElement("td");
+    const cell3 = document.createElement("td");
 
-     cell1.textContent = exercice;
-     cell2.textContent = repetition;
-     cell3.textContent = "tuto ici";
+    cell1.textContent = exercice;
+    cell2.textContent = repetition;
+    switch (exercice) {
+        case "push-up":
+            cell3.innerHTML = '<img src = "assets/Tutoriels/push-up.gif" width = "200" height="200" />';
+            break;
+        case "knees-push-up":
+            cell3.innerHTML = '<img src = "assets/Tutoriels/knees-push-up.gif" width = "200" height="200" />';
+            break;
+        case "handstand-push-up":
+            cell3.innerHTML = '<img src = "assets/Tutoriels/handstand-push-up.gif" width = "200" height="200" />';
+            break;
+        case "pull-up":
+            cell3.innerHTML = '<img src = "assets/Tutoriels/pull-up.gif" width = "200" height="200" />';
+            break;
+        case "bench-dips":
+            cell3.innerHTML = '<img src = "assets/Tutoriels/bench-dips.gif" width = "200" height="200" />';
+            break;
+        case "dips":
+            cell3.innerHTML = '<img src = "assets/Tutoriels/dips.gif" width = "200" height="200" />';
+            break;
+        case "squats":
+            cell3.innerHTML = '<img src = "assets/Tutoriels/squats.gif" width = "200" height="200" />';
+            break;
+        case "split":
+            cell3.innerHTML = '<img src = "assets/Tutoriels/split.gif" width = "200" height="200" />';
+            break;
+        case "muscle-up":
+            cell3.innerHTML = '<img src = "assets/Tutoriels/muscle-up.gif" width = "200" height="200" />';
+            break;
+        case "humanFlag":
+            cell3.innerHTML = '<img src = "assets/Tutoriels/humanFlag.jpg" width = "200" height="200" />';
+            break;
+        default:
+            cell3.textContent = "Erreur rencontrée avec le tutoriel";
+            break;
+    }
 
-     newRow.appendChild(cell1);
-     newRow.appendChild(cell2);
-     newRow.appendChild(cell3);
+    newRow.appendChild(cell1);
+    newRow.appendChild(cell2);
+    newRow.appendChild(cell3);
 
-     document.querySelector("#trainingResults").appendChild(newRow);
+    document.querySelector("#trainingResults").appendChild(newRow);
 }
 
 function IMCcalculator(size, weight){
