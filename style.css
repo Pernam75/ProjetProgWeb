@@ -5,7 +5,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scrollbar-width: thin;
 }
 
 body{
@@ -16,7 +15,7 @@ body{
 }
 
 #page{
-    min-height:100vh;
+    min-height:99vh;
 	display:flex;
 	flex-direction:column;
 }
@@ -150,12 +149,32 @@ body{
     height: 50vh;
 }
 
-/*Table style in training page*/
+/*Table and form style in training page*/
+.formInformations{
+    display: flex;
+    padding: 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border : none;
+    box-shadow: 0px 2px darkgray;
+}
+
+.textZone, .numberZone{
+    flex-grow: 1;
+    margin: 5px 0 5px 8px;
+}
+
+.textZone:invalid, .numberZone:invalid{
+    box-shadow: 0px 2px #3C6E71;
+    caret-color: transparent;
+    border: none;
+}
+
 table{
     display: table;
     border-collapse: collapse;
     margin: 10px;
-    width: 100%;
+    width: 99%;
 }
 
 tr,th{
@@ -167,10 +186,13 @@ tr,th{
 .formInformations{
     margin: 1%;
     display: flex;
-    width:100%;
+    width:99%;
     justify-content: center;
 }
 
+.goal{
+    max-width: 20vw;
+}
 .genderGoal{
     display: flex;
     flex-direction:column;
