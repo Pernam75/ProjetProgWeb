@@ -1,5 +1,6 @@
-const resultsTable = document.querySelector("#resultsTable");
+const resultsTable = document.querySelector("#trainingResults");
 const add = document.querySelector("#createTraining");
+const supp = document.querySelector("#delete");
 
 add.onmouseup = function addTraining(){
     if(document.getElementById("age").value == "" || document.getElementById("size").value == "" || document.getElementById("weight").value == "" || document.getElementById("userGoal").value == ""){
@@ -28,10 +29,15 @@ add.onmouseup = function addTraining(){
                 }
             });
         }
+        new_lines = true;
     }
 }
 
-
+supp.onclick = function deleteAll(){
+    while (resultsTable.rows.length > 2){
+        resultsTable.deleteRow(resultsTable.rows.length-1);
+    }
+}
 
 function addNewRow(exercice, repetition){
     const newRow = document.createElement("tr");
@@ -82,7 +88,7 @@ function addNewRow(exercice, repetition){
     newRow.appendChild(cell2);
     newRow.appendChild(cell3);
 
-    document.querySelector("#trainingResults").appendChild(newRow);
+    resultsTable.appendChild(newRow);
 }
 
 function IMCcalculator(size, weight){
