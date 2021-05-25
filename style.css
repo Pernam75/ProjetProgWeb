@@ -98,6 +98,7 @@ body{
 .introduction{
     color: white;
     width: 50%;
+    min-width: 300px;
 }
 
 .paragraphe{
