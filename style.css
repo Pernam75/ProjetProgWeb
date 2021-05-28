@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
 }
-
+ 
 body{
     margin:0;
     padding:0;
@@ -25,7 +25,7 @@ body{
     background-color: #3C6E71;   
 }
 
-.title{
+.introTitle,.title{
     margin: 1%;
     color: #3C6E71;   
 }
@@ -46,8 +46,6 @@ body{
     position: relative;
     background-color: #353535;
     height : 7vh;
-    position: sticky;
-    top:0;
     color: white;
     padding: 2%;
     display:flex;
@@ -89,18 +87,28 @@ body{
     transform: scaleX(1);
   }
 
-.introduction{
-    font-size: medium;
-    text-align: center;
-    color: #353535;
-    margin: 1%;
-}
 
-.paragraphe{
+.introduction,.paragraphe{
     text-align: justify;
     color: #353535;
     margin: 1%;
     font-size: medium;
+}
+
+.introduction{
+    color: white;
+    width: 50%;
+    min-width: 300px;
+}
+
+.paragraphe{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.title{
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .headerLink{
@@ -113,14 +121,21 @@ body{
     margin:auto;
 }
 
-#text{
-    display: flex;
-    flex-direction: column;
+.videoBox{
+    position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
 }
 
-.videoBox{
-    display :flex;
-    margin: 2vh;
+.videoBox iframe{
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    padding: 4vh;
 }
 
 .video{
@@ -128,4 +143,82 @@ body{
     margin-right: auto;
     width: 52vw;
     height: 50vh;
+}
+
+#box1,#box2,#box3,#box4,#box5{
+    height: 88vh;
+    display: flex;
+}
+
+.introTitle{
+    text-align: center;
+    width: 50%;
+}
+
+#box1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    background-image: url(assets/test.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;    
+}
+
+#box3,#box5{
+    justify-content: flex-end;
+}
+
+.reveal{
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.textBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(224, 224, 224);
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex:1;
+    min-width: 300px;
+}
+
+#box2,#box3,#box4,#box5{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.welcomeImage{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex:1;
+    min-width: 550px;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
 }
