@@ -15,14 +15,130 @@
             <div class="headerLink"><a class="link" href="history.html">Histoire</a></div>
             <div class="headerLink"><a class="link" href="athletes.html">Athletes</a></div>
             <div class="headerLink"><a class="link" href="training.html">Entrainements</a></div>
-            <a class="headerLink" href="https://www.efrei.fr/"><img class = "efrei_logo" src = "assets/logo_efrei.png" alt="efrei_logo"></a>
+            <a class="headerLink" href="https://www.efrei.fr/" target="_blank"><img class = "efrei_logo" src = "assets/logo_efrei.png" alt="efrei_logo"></a>
         </div>
         <div id="content">
-            <h1 class="titleHeader">Pourquoi ce site ?</h1>
+            <h1 class="titleHeader">Créez un entraînement adapté à vos besoins</h1>
+            <div class="formInformations">
+                <form class="informations" action ="/my-handling-form-page">
+                    <div class="data">
+                        <input class = "textZone" type="text" placeholder="Pseudo" id="pseudo" name="userPseudo" required>
+                        <input class = "numberZone" type="number" placeholder="Taille" id="size" name="userSize" min="100" max="250" required>
+                        <input class = "numberZone" type="number" placeholder="Poids" id="weight" name="userWeight" min="40" required>
+                        <input class = "numberZone" type="number" placeholder="Age" id="age" name="userAge" min="18" required>
+                        <div class="genderGoal">
+                            <div>
+                                <p> Genre : </p>
+                                <input type="radio" id="homme" name="sexe" value="homme" checked>
+                                <label for="homme">Masculin</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="femme" name="sexe" value="femme">
+                                <label for="femme">Féminin</label>
+                            </div>
+                            <select class="goal" name="Goal" id="userGoal">
+                                <option value="">--Sélectionnez votre Objectif</option>
+                                <option value="endurance">Endurance Musculaire</option>
+                                <option value="muscle">Masse Musculaire</option>
+                                <option value="force">Force</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div> 
+            <div class="formExercices">
+                <select class="exercices" name="Exercice" id="exercice1">
+                    <option value="">--Exercice 1--</option>
+                    <option value="push-up">Push-up</option>
+                    <option value="knees-push-up">Knees Push-Up</option>
+                    <option value="handstand-push-up">Handstand Push-Up</option>
+                    <option value="pull-up">Pull-up</option>
+                    <option value="bench-dips">Bench-Dips</option>
+                    <option value="dips">Dips</option>
+                    <option value="squats">Squats</option>
+                    <option value="split">Split</option>
+                    <option value="muscle-up">Muscle-up</option>
+                    <option value="humanFlag">Human Flag</option>
+                </select>
+
+                <select class="exercices" name="Exercice" id="exercice2">
+                    <option value="">--Exercice 2--</option>
+                    <option value="push-up">Push-up</option>
+                    <option value="knees-push-up">Knees Push-Up</option>
+                    <option value="handstand-push-up">Handstand Push-Up</option>
+                    <option value="pull-up">Pull-up</option>
+                    <option value="bench-dips">Bench-Dips</option>
+                    <option value="dips">Dips</option>
+                    <option value="squats">Squats</option>
+                    <option value="split">Split</option>
+                    <option value="muscle-up">Muscle-up</option>
+                    <option value="humanFlag">Human Flag</option>
+                </select>
+
+                <select class="exercices" name="Exercice" id="exercice3">
+                    <option value="">--Exercice 3--</option>
+                    <option value="push-up">Push-up</option>
+                    <option value="knees-push-up">Knees Push-Up</option>
+                    <option value="handstand-push-up">Handstand Push-Up</option>
+                    <option value="pull-up">Pull-up</option>
+                    <option value="bench-dips">Bench-Dips</option>
+                    <option value="dips">Dips</option>
+                    <option value="squats">Squats</option>
+                    <option value="split">Split</option>
+                    <option value="muscle-up">Muscle-up</option>
+                    <option value="humanFlag">Human Flag</option>
+                </select>
+
+                <select class="exercices" name="Exercice" id="exercice4">
+                    <option value="">--Exercice 4--</option>
+                    <option value="push-up">Push-up</option>
+                    <option value="knees-push-up">Knees Push-Up</option>
+                    <option value="handstand-push-up">Handstand Push-Up</option>
+                    <option value="pull-up">Pull-up</option>
+                    <option value="bench-dips">Bench-Dips</option>
+                    <option value="dips">Dips</option>
+                    <option value="squats">Squats</option>
+                    <option value="split">Split</option>
+                    <option value="muscle-up">Muscle-up</option>
+                    <option value="humanFlag">Human Flag</option>
+                </select>
+
+                <select class="exercices" name="Exercice" id="exercice5">
+                    <option value="">--Exercice 5--</option>
+                    <option value="push-up">Push-up</option>
+                    <option value="knees-push-up">Knees Push-Up</option>
+                    <option value="handstand-push-up">Handstand Push-Up</option>
+                    <option value="pull-up">Pull-up</option>
+                    <option value="bench-dips">Bench-Dips</option>
+                    <option value="dips">Dips</option>
+                    <option value="squats">Squats</option>
+                    <option value="split">Split</option>
+                    <option value="muscle-up">Muscle-up</option>
+                    <option value="humanFlag">Human Flag</option>
+                </select>
+            </div>
+            
+            <div class="actionButtons">
+                <button id="createTraining" type="button" >Calculer mon entraînement</button>
+                <button id="delete" type="button">Tout supprimer</button>
+            </div>
+
+            <table id="trainingResults">
+                <th colspan = 3>Voici votre entrainement personnalisé</th>
+                <tbody>
+                    <tr>
+                        <td>Exercice</td>
+                        <td>Répétitions</td>
+                        <td>Tutoriel</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+
         <div id="footer">
             <div class="footerLink" id="a-proposLink" ><a class="link" href="apropos.html">A propos</a></div>
         </div>
     </div>
+    <script src="script.js" defer></script>
 </body>
 </html>
