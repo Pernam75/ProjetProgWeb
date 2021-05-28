@@ -77,34 +77,34 @@ function addNewRow(exercice, repetition){
     cell2.textContent = repetition;
     switch (exercice) {
         case "push-up":
-            cell3.innerHTML = '<a href="tuto.html#Push-up"><img src = "assets/Tutoriels/push-up.gif" width = "200" height="200" /></a>';
+            cell3.innerHTML = '<a href="tuto.html#Push-up" target="_blank"><img src = "assets/Tutoriels/push-up.gif" width = "200" height="200" /></a>';
             break;
         case "knees-push-up":
-            cell3.innerHTML = '<a href="tuto.html#Knees-push-up"><img src = "assets/Tutoriels/knees-push-up.gif" width = "200" height="200" /></a>';
+            cell3.innerHTML = '<a href="tuto.html#Knees-push-up" target="_blank"><img src = "assets/Tutoriels/knees-push-up.gif" width = "200" height="200" /></a>';
             break;
         case "handstand-push-up":
-            cell3.innerHTML = '<a href="tuto.html#Handstand-push-up"><img src = "assets/Tutoriels/handstand-push-up.gif" width = "200" height="200" /></a>';
+            cell3.innerHTML = '<a href="tuto.html#Handstand-push-up" target="_blank"><img src = "assets/Tutoriels/handstand-push-up.gif" width = "200" height="200" /></a>';
             break;
         case "pull-up":
-            cell3.innerHTML = '<a href="tuto.html#Pull-up"><img src = "assets/Tutoriels/pull-up.gif" width = "200" height="200" /></a>';
+            cell3.innerHTML = '<a href="tuto.html#Pull-up" target="_blank"><img src = "assets/Tutoriels/pull-up.gif" width = "200" height="200" /></a>';
             break;
         case "bench-dips":
-            cell3.innerHTML = '<a href="tuto.html#Bench-dips"><img src = "assets/Tutoriels/bench-dips.gif" width = "200" height="200" /></a>';
+            cell3.innerHTML = '<a href="tuto.html#Bench-dips" target="_blank"><img src = "assets/Tutoriels/bench-dips.gif" width = "200" height="200" /></a>';
             break;
         case "dips":
-            cell3.innerHTML = '<a href="tuto.html#Dips"><img src = "assets/Tutoriels/dips.gif" width = "200" height="200" /></a>';
+            cell3.innerHTML = '<a href="tuto.html#Dips" target="_blank"><img src = "assets/Tutoriels/dips.gif" width = "200" height="200" /></a>';
             break;
         case "squats":
-            cell3.innerHTML = '<a href="tuto.html#Squats"><img src = "assets/Tutoriels/squats.gif" width = "200" height="200" /></a>';
+            cell3.innerHTML = '<a href="tuto.html#Squats" target="_blank"><img src = "assets/Tutoriels/squats.gif" width = "200" height="200" /></a>';
             break;
         case "split":
-            cell3.innerHTML = '<a href="tuto.html#Splits"><img src = "assets/Tutoriels/split.gif" width = "200" height="200" /></a>';
+            cell3.innerHTML = '<a href="tuto.html#Splits" target="_blank"><img src = "assets/Tutoriels/split.gif" width = "200" height="200" /></a>';
             break;
         case "muscle-up":
-            cell3.innerHTML = '<a href="tuto.html#Muscle-up"><img src = "assets/Tutoriels/muscle-up.gif" width = "200" height="200" /></a>';
+            cell3.innerHTML = '<a href="tuto.html#Muscle-up" target="_blank"><img src = "assets/Tutoriels/muscle-up.gif" width = "200" height="200" /></a>';
             break;
         case "humanFlag":
-            cell3.innerHTML = '<a href="tuto.html#Human-flag"><img src = "assets/Tutoriels/humanFlag.jpg" width = "200" height="200" /></a>';
+            cell3.innerHTML = '<a href="tuto.html#Human-flag" target="_blank"><img src = "assets/Tutoriels/humanFlag.jpg" width = "200" height="200" /></a>';
             break;
         default:
             cell3.textContent = "Erreur rencontrée avec le tutoriel";
