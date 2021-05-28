@@ -37,14 +37,14 @@ body{
     
 }
 
-#footer{
+footer{
     background-color: #353535;
     height : 7vh;
     color: white;
     display: flex;
 }
 
-#header{
+header{
     align-items : center;
     position: relative;
     background-color: #353535;
