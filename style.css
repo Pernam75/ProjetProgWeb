@@ -368,5 +368,18 @@ button:hover{
 /* A propos page*/
 
 .names{
-    
+    display: flex;
+}
+
+.aName{
+    flex:1;
+    width: 100%;
+}
+
+.kerbal{
+    padding: auto;
+}
+
+#jules, #joel, #tommy{
+
 }
