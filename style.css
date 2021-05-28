@@ -213,6 +213,32 @@ tr,th{
     padding-left: 2%;
     padding-right: 2%;
 }
+.paragraphe2{
+    text-align: justify;
+    color: #353535;
+    margin: 1%;
+    font-size: medium;
+    width :600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    text-align: justify;
+    color: #08334d;
+    margin: 1%;
+    font-size: x-large;
+    text-align: center;
+}
+.pic{
+    /*width: 500px;
+    height: 700px;*/
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    /*margin-bottom: 100px;*/
+}
 
 .headerLink{
     width: 100%;
