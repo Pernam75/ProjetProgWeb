@@ -155,6 +155,7 @@ header{
     margin-right: auto;
     width: 52vw;
     height: 50vh;
+    border: none;
 }
 
 /*Table and form style in training page*/
