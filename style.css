@@ -214,7 +214,6 @@ tr,th{
     padding-right: 2%;
 }
 
-
 .pic{
     /*width: 500px;
     height: 700px;*/
@@ -367,8 +366,15 @@ button:hover{
 
 /* A propos page*/
 
+.namesContent{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
 .names{
     display: flex;
+    justify-content: center;
 }
 
 .aName{
@@ -380,8 +386,16 @@ button:hover{
 }
 
 .kerbal{
-    height: 25vw;
-    width: 25vw;
+    height: 15vh;
+    width: 15vh;
+}
+
+#joel{
+    margin: 0% 20% 0% 20%;
+}
+
+.namesText{
+    text-align: center;
 }
 
 
