@@ -276,6 +276,7 @@ button:hover{
 #box1,#box2,#box3,#box4,#box5{
     height: 88vh;
     display: flex;
+    min-height: 700px;
 }
 
 .introTitle{
@@ -325,22 +326,17 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     background-color: rgb(224, 224, 224);
-    flex-grow: 1;
-    flex-shrink: 1;
     flex:1;
     min-width: 300px;
 }
 
 #box2,#box3,#box4,#box5{
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
 
 .welcomeImage{
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
     flex:1;
     min-width: 550px;
 }
