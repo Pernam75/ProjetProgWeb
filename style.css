@@ -377,7 +377,7 @@ button:hover{
 
 .aName{
     flex:1;
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -397,6 +397,7 @@ button:hover{
 }
 
 .socialLinks{
+    flex-direction: row;
     width:30%;
     justify-content:center;
     align-items: center;
