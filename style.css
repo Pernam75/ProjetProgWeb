@@ -372,6 +372,7 @@ button:hover{
 .names{
     display: flex;
     justify-content: center;
+    margin: 0% 10% 0% 10%;
 }
 
 .aName{
@@ -388,11 +389,21 @@ button:hover{
 }
 
 #joel{
-    margin: 0% 20% 0% 20%;
+    margin: 0% 1% 0% 1%;
 }
 
 .namesText{
     text-align: center;
 }
 
+.socialLinks{
+    width:30%;
+    justify-content:center;
+    align-items: center;
+}
+
+.githubIcon, .linkedinIcon{
+    min-width:4vh;
+    width: 10%;
+}
 
