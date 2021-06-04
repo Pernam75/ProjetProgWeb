@@ -29,6 +29,7 @@ if(add!= null){
         if(document.getElementById("age").value == "" || document.getElementById("size").value == "" || document.getElementById("weight").value == "" || document.getElementById("userGoal").value == ""){
             alert("Veuillez entrer toutes vos informations")
         }else{
+            document.getElementById("firstLine").textContent="Voici votre entrainement personnalisé "+document.getElementById("pseudo").value+" !";
             //First we calculate the imc of the user
             const imc = IMCcalculator(document.getElementById("size").value, document.getElementById("weight").value);
             //Then we get the gender the age and the target of the user in order to calculate the better training program
@@ -215,7 +216,7 @@ function getRepetition(exercice, imc, gender, age, objectif){
             break;
     }
 
-    return nbRepetitions/350;
+    return Math.round(nbRepetitions/350);
 }
 
 
