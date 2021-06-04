@@ -1,12 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
-    <h1>First pull request</h1>
+    <div id="page">
+        <header>
+            <div class="headerLink" id="homeLink"><a class="link" href="index.html">Accueil</a></div>
+            <div class="headerLink" id="historyLink"><a class="link" href="history.html">Histoire</a></div>
+            <div class="headerLink" id="athletesLink"><a class="link" href="athletes.html">Athletes</a></div>
+            <div class="headerLink" id="tainingLink"><a class="link" href="training.html">Entrainements</a></div>
+            <a class="headerLink" href="https://www.efrei.fr/" target="_blank"><img class = "efrei_logo" src = "assets/logo_efrei.png" alt="efrei_logo"></a>
+        </header>
+        <div id="content">
+            <h1 class="titleHeader">Pourquoi ce site ?</h1>
+            <div id="box1">
+                <h2 class="introTitle">Diffuser une passion</h2>
+                <p class="introduction">
+                    Voilà le but de ce site. Nous sommes trois passionnés de street workout et ce projet
+                    de développement web est, pour nous, l'occasion de faire connaître ce sport encore
+                    malheureursement, trop peu mis en avant. Vous ne savez pas ce qu'est le street workout ? Vous êtes au bon endroit !
+                    Vous savez déjà ce qu'est le street workout ? Quelle chance vous êtes encore au bon endroit !
+                    Vous pourrez trouver ici des ressources qui vous présentrerons 
+                    le street workout, son histoire, ses plus grands athlètes et vous pourrez apprendre pourquoi,
+                    vous même, devriez vous y mettre. Le site se décompose en 4 pages que nous vous invitons à découvrir.
+                </p>
+            </div>
+            <div id="box2">
+                <div class="textBox">
+                    <div class="title reveal"><a class="homePageLinks link" href="history.html"><strong>L'Histoire</strong></a></div>
+                    <p class="paragraphe reveal">
+                        Parce qu'un peu de culture ne fait pas de mal ! <br> 
+                        Nous allons essayer de vous résumer la création de ce sport, 
+                        enfin, de votre future passion. Vous apprendrez donc pourquoi des gens ont commencé à se mettre dans des positions bizarres
+                        pour se muscler et comment cette tendance s'est développée.  
+                    </p>
+                </div>
+                <div class="welcomeImage">
+                    <img class="imgClass" src="assets/accueil/histoire.jpg" alt="Hannibal For King">
+                </div>
+            </div>
+            <div id="box3">
+                <div class="welcomeImage">
+                    <img class="imgClass" src="assets/accueil/athlete.jpg" alt="drapeau">
+                </div>
+                <div class="textBox">
+                    <div class="title reveal"><a class="homePageLinks link" href="athletes.html"><strong>Les Athlètes</strong></a></div>
+                    <p class="paragraphe reveal">
+                        La rubrique la plus spectaculaire !<br>
+                        C'est ici que vous verrez les performances des grands noms de la discipline !
+                        C'est LA page à visiter lorsque vous n'êtes plus motivé pour aller à l'entrainement. Vous pourrez admirez les prouesses 
+                        des meilleurs athlètes du moment. Entre muscles et force pure c'est sur cette page que vous découvrirez l'univers du street workout ! 
+                    </p>
+                </div>
+            </div>
+            <div id="box4">
+                <div class="textBox">
+                    <div class="title reveal"><a class="homePageLinks link" href="training.html"><strong>L'Entraînement</strong></a></div>
+                    <p class="paragraphe reveal">
+                        Place à l'action ! <br> 
+                        La page interactive du site, celle qui vous permettra de créer vos entrainements et qui vous guidera lors de vos
+                        (nombreuses) séances. Le principe sera de sélectionner vos exercices de musculation, saisir votre age, votre poids, votre taille
+                        ainsi que vos objectifs et le site vous proposera un programme adapté à votre niveau.
+                    </p>
+                </div>
+                <div class="welcomeImage">
+                    <img class="imgClass" src="assets/accueil/training.jpg" alt="pull-up">
+                </div>
+            </div>
+            <div id="box5">
+                <div class="welcomeImage">
+                    <img class="imgClass" src="assets/accueil/tutoriels.jpg" alt="exercices tutorial">
+                </div>
+                <div class="textBox">
+                    <div class="title reveal"><a class="homePageLinks link" href="tuto.html"><strong>Les Tutoriels</strong></a></div>
+                    <p class="paragraphe reveal">
+                        La page pour apprendre !<br>
+                        C'est la que vous trouverez une liste de tutoriels sur tous les exercices proposés sur le site
+                        et que vous pourrez voir quels muscles sont sollicités pour vous aider à choisir.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footerLink" id="a-proposLink" ><a class="link" href="apropos.html">A propos</a></div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

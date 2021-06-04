@@ -1,0 +1,459 @@
+/* Website basics style*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body{
+    margin:0;
+    padding:0;
+    background:#D9D9D9;
+    font-family: 'Poppins';
+}
+
+#page{
+    min-height:100vh;
+	display:flex;
+	flex-direction:column;
+}
+
+.titleHeader{
+    color: white;
+    text-align: center;
+    background-color: #3C6E71;   
+}
+
+.introTitle,.title{
+    margin: 1%;
+    color: #3C6E71;   
+}
+
+#content{
+    flex-grow:1;
+    /*background: linear-gradient(#353535 8vh, #3C6E71 16vh, white 70vh);*/
+    
+}
+
+footer{
+    background-color: #353535;
+    height : 7vh;
+    color: white;
+    display: flex;
+    padding-bottom: 1vh;
+}
+
+header{
+    align-items : center;
+    position: relative;
+    background-color: #353535;
+    height : 7vh;
+    color: white;
+    padding: 2%;
+    display:flex;
+}
+
+.title{
+    margin: 1%;
+    color: #3C6E71;   
+}
+
+.titleHeader{
+    color: white;
+    text-align: center;
+    background-color: #3C6E71;   
+}
+
+.paragraphe{
+    text-align: justify;
+    color: #353535;
+    margin: 1%;
+    font-size: medium;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header and footer style*/
+
+.link{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.headerLink{
+    width: 100%;
+    text-align: center;
+}
+
+.footerLink{
+    width: 100%;
+    margin:auto;
+}
+
+.efrei_logo{
+    width: 100px;
+    height: 100px;
+}
+
+.footerLink{
+    width : 100%;
+}
+
+#a-proposLink{
+    text-align:center;
+}
+
+/*Header and footer links animations*/
+
+.link::before {
+    content: "";
+    position: absolute;
+    background: rgb(255, 254, 254);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.6s;
+}
+  
+.link:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+
+/*Home Page Style*/
+
+#introductionText{
+    position:absolute;
+    align-self: center;
+    height: 30vh;
+    width: 40vh;
+}
+
+.homePageLinks{ 
+    color:#3C6E71; font-size: 2em;
+}
+
+.homePageLinks::before{
+    background-color: #3C6E71; 
+}
+
+.introduction,.paragraphe{
+    text-align: justify;
+    color: #353535;
+}
+
+/*Videos Styles*/
+
+.videoBox{
+    display :flex;
+    margin: 2vh;
+}
+
+.video{
+    margin-left: auto;
+    margin-right: auto;
+    width: 52vw;
+    height: 50vh;
+    border: none;
+}
+
+/*Table and form style in training page*/
+
+.formInformations{
+    display: flex;
+    padding: 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.textZone, .numberZone{
+    flex-grow: 1;
+    margin: 5px 0 5px 8px;
+}
+
+.textZone:invalid, .numberZone:invalid{
+    box-shadow: 0px 2px #3C6E71;
+    caret-color: transparent;
+    border: none;
+}
+
+select{
+    font-size: small;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #3C6E71;
+    padding: 0 1% 0 0;
+    margin-right: 1vh;
+    width: 100%;
+    font-family: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+
+.exercices{
+    width:100%;
+}
+
+.exercicesBox{
+    display: flex;
+    flex: 1;
+    min-width:225px;
+    max-width: 225px;
+}
+
+.formExercices{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3vh 2vw 0 2vw;
+    border-top: solid darkgray;
+}
+
+.tutoLink{
+    color: #3C6E71;
+}
+
+.tutoLink::before{
+    background-color: #3C6E71;
+}
+
+table{
+    display: table;
+    border-collapse: collapse;
+    margin: 10px;
+    width: 99%;
+    margin:auto;
+}
+
+tr,th{
+    border-bottom: 1px solid #333;
+    text-align: center;
+    padding : 5px;
+}
+
+.formInformations{
+    margin: 1%;
+    display: flex;
+    width:99%;
+    justify-content: center;
+}
+
+.introduction{
+    color: white;
+    width: 50%;
+    min-width: 300px;
+}
+
+.paragraphe{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.title{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.pic{
+    /*width: 500px;
+    height: 700px;*/
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    /*margin-bottom: 100px;*/
+}
+
+.headerLink{
+    width: 100%;
+}
+
+button{
+    background-color: #3C6E71;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: white;
+    color:#3C6E71;
+    cursor: pointer;
+}
+
+.videoBox{
+    position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.videoBox iframe{
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    padding: 10%;
+}
+
+.video{
+    margin-left: auto;
+    margin-right: auto;
+    width: 52vw;
+    height: 50vh;
+}
+
+#box1,#box2,#box3,#box4,#box5{
+    height: 88vh;
+    display: flex;
+    min-height: 700px;
+}
+
+.introTitle{
+    text-align: center;
+    width: 50%;
+}
+
+#box1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    background-image: url(assets/accueil/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;    
+}
+
+#box3,#box5{
+    justify-content: flex-end;
+}
+
+.reveal{
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.textBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(224, 224, 224);
+    flex:1;
+    min-width: 300px;
+}
+
+#box2,#box3,#box4,#box5{
+    flex-wrap: wrap;
+}
+
+
+.welcomeImage{
+    display: flex;
+    flex:1;
+    min-width: 400px;
+}
+
+
+.imgClass{
+    width: 100%;
+    height: 100%;
+}
+
+.actionButtons {
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.goal{
+    width: 12vw;
+    min-width: 220px;
+}
+.genderGoal{
+    display: flex;
+    flex-direction:column;
+}
+
+/* A propos page*/
+
+.namesContent{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.names{
+    display: flex;
+    justify-content: center;
+    margin: 0% 10% 0% 10%;
+}
+
+.aName{
+    flex:1;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kerbal{
+    height: 15vh;
+    width: 15vh;
+}
+
+#joel{
+    margin: 0% 1% 0% 1%;
+}
+
+.namesText{
+    text-align: center;
+}
+
+.socialLinks{
+    flex-direction: row;
+    width:30%;
+    justify-content:center;
+    align-items: center;
+}
+
+.githubIcon, .linkedinIcon{
+    min-width:4vh;
+    width: 10%;
+}
+
