@@ -42,6 +42,7 @@ footer{
     height : 7vh;
     color: white;
     display: flex;
+    padding-bottom: 1vh;
 }
 
 header{
@@ -84,7 +85,6 @@ header{
     text-decoration: none;
     position: relative;
 }
-
 
 .headerLink{
     width: 100%;
@@ -159,6 +159,7 @@ header{
 }
 
 /*Table and form style in training page*/
+
 .formInformations{
     display: flex;
     padding: 12px;
@@ -177,6 +178,36 @@ header{
     box-shadow: 0px 2px #3C6E71;
     caret-color: transparent;
     border: none;
+}
+
+select{
+    font-size: small;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #3C6E71;
+    padding: 0 1% 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+
+.formExercices{
+    width: 15vw;   
+    min-width: 130px;
+}
+
+.formExercices{
+    margin: 0 0 0 4vw;
+}
+
+.tutoLink{
+    color: #3C6E71;
+}
+
+.tutoLink::before{
+    background-color: #3C6E71;
 }
 
 table{
@@ -348,13 +379,15 @@ button:hover{
 }
 
 .actionButtons{
-    margin:10px;
+    margin-top: 1vh;
     display: flex;
-    max-width: 16vw;
+    width: 100%;
+    justify-content: center;
 }
 
 .goal{
-    max-width: 20vw;
+    width: 12vw;
+    min-width: 220px;
 }
 .genderGoal{
     display: flex;
