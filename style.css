@@ -137,6 +137,13 @@ header{
     width: 40vh;
 }
 
+.homePageLinks{ 
+    color:#3C6E71; font-size: 2em;
+}
+
+.homePageLinks::before{
+    background-color: #3C6E71; 
+}
 
 .introduction,.paragraphe{
     text-align: justify;
