@@ -370,7 +370,7 @@ button:hover{
 .welcomeImage{
     display: flex;
     flex:1;
-    min-width: 550px;
+    min-width: 400px;
 }
 
 
