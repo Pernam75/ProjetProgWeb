@@ -137,9 +137,9 @@ function getGender(){
 
 function getRepetition(exercice, imc, gender, age, objectif){
     let imcClass = 1; // We calculate the imc classification
-    if(imc <= 18,5){
+    if(imc <= 18.5){
         imcClass = 7;
-    }else if(imc > 18,5 && imc <= 25){
+    }else if(imc > 18.5 && imc <= 25){
         imcCLass = 10;
     }else if(imc > 25 && imc <= 30){
         imcClass = 7;
@@ -153,7 +153,7 @@ function getRepetition(exercice, imc, gender, age, objectif){
 
     let genderClass = 1;
     if(gender == "homme"){
-        genderClass = 1,45; // Men are on average 30 to 60% stronger than women
+        genderClass = 1.45; // Men are on average 30 to 60% stronger than women
     }else{
         genderClass = 1;
     }
